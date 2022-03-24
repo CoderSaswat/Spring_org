@@ -1,0 +1,10 @@
+package com.saswat.spring.springcore.list;
+
+public class Hospital {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
