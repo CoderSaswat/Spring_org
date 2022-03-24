@@ -1,0 +1,5 @@
+package com.saswat.spring.springcore.lifecycle.xmlconfig;
+
+public class Patient {
+
+}
