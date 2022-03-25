@@ -1,0 +1,4 @@
+dbServer = saswatserver
+dbPort = 3306
+dbUser = root
+dbPass = root

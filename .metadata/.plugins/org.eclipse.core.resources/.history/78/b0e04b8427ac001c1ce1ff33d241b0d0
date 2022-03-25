@@ -1,0 +1,6 @@
+package com.saswat.spring.springcore.constructorinjection;
+
+public class Address {
+	private String at;
+	private String po;
+}
