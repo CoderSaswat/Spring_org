@@ -14,7 +14,7 @@ public class Patient implements InitializingBean, DisposableBean {
 		System.out.println("this is setter() function");
 		this.id = id;
 	}
-	
+
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		System.out.println("inside init() method");
@@ -24,13 +24,9 @@ public class Patient implements InitializingBean, DisposableBean {
 	public void destroy() throws Exception {
 		System.out.println("inside destroy() method");
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Patient [id=" + id + "]";
 	}
-	
-
-	
-	
 }

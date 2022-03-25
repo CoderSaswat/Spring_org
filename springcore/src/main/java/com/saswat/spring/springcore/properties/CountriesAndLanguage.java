@@ -17,5 +17,4 @@ public class CountriesAndLanguage {
 	public String toString() {
 		return "CountriesAndLanguage [countryAndLanguage=" + countryAndLanguage + "]";
 	}
-	
 }

@@ -11,12 +11,12 @@ public class Patient {
 		System.out.println("this is setter() function");
 		this.id = id;
 	}
-	
-	public void hy() {	//init() method
+
+	public void hy() { // init() method
 		System.out.println("this is init() method");
 	}
-	
-	public void bye() {	//destroy() method
+
+	public void bye() { // destroy() method
 		System.out.println("this is destroy() method");
 	}
 
@@ -24,6 +24,4 @@ public class Patient {
 	public String toString() {
 		return "Patient [id=" + id + "]";
 	}
-	
-	
 }
