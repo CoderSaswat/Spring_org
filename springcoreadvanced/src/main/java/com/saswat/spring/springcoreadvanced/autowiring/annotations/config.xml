@@ -4,7 +4,14 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<context:property-placeholder location="com/saswat/spring/springcore/propertyfile/database.properties" />
+	<context:annotation-config></context:annotation-config>
 
-	<bean name="mydao" class="com.saswat.spring.springcore.propertyfile.MyDao" p:dbServer="${dbServer}" p:dbPort="${dbPort}" p:dbUser="${dbUser}" p:dbPass="${dbPass}"></bean>
+
+	<bean name="address" class="com.saswat.spring.springcoreadvanced.autowiring.annotations.Address"
+	 p:at="panikoili" p:po="pkl"></bean>
+
+
+	<bean name="employee" class="com.saswat.spring.springcoreadvanced.autowiring.annotations.Employee"></bean>
+
+
 </beans>
