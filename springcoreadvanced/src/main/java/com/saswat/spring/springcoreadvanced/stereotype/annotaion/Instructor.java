@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component("inst")
 @Scope("prototype")
 public class Instructor {
-	@Value("10")
+	@Value("#{40+60}")
 	private int id; // primitive type
 	@Value("saswat kumar")
 	private String name;

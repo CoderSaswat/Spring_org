@@ -5,12 +5,14 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Profile {
-	@Value("10")
+	@Value("#{T(java.lang.Math).abs(-99)}")
 	private int noOfCourses;
-	@Value("500")
+	@Value("#{T(java.lang.Integer).MAX_VALUE}")
 	private int noOfVideos;
-	@Value("thoughtclan")
+	@Value("#{new String('thought clan').toUpperCase()}")
 	private String companyName;
+	@Value("#{1>6?false:true}")
+	private boolean isActive;
 
 	public int getNoOfCourses() {
 		return noOfCourses;
@@ -39,7 +41,7 @@ public class Profile {
 	@Override
 	public String toString() {
 		return "Profile [noOfCourses=" + noOfCourses + ", noOfVideos=" + noOfVideos + ", companyName=" + companyName
-				+ "]";
+				+ ", isActive=" + isActive + "]";
 	}
 
 }
