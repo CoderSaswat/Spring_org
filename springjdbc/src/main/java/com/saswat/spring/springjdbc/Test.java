@@ -11,7 +11,7 @@ public class Test {
 				"com/saswat/spring/springjdbc/config.xml");
 		JdbcTemplate jdbcTemplate = (JdbcTemplate) context.getBean("jdbcTemplate");
 		String sql = "insert into employee values(?,?,?)";
-		int result = jdbcTemplate.update(sql, 1, "saswat", "panda");
+		int result = jdbcTemplate.update(sql, 2, "kanha", "nayak");
 		System.out.println("no of records inserted : " + result);
 	}
 
