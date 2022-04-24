@@ -22,14 +22,16 @@
 		base-package="com.saswat.spring.springorm.product.dao.impl"></context:component-scan>
 	<bean
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
-		p:driverClassName="com.mysql.cj.jdbc.Driver"
+		name="dataSource" p:driverClassName="com.mysql.cj.jdbc.Driver"
 		p:url="jdbc:mysql://localhost:3306/udemy" p:username="root"
-		p:password="root" name="dataSource">
+		p:password="root">
 	</bean>
 
 	<bean
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean"
-		name="sessionFactory" p:dataSource-ref="dataSource">
+		name="sessionFactory">
+		<property name="dataSource" ref="dataSource">
+		</property>
 		<property name="hibernateProperties">
 			<props>
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
@@ -38,7 +40,7 @@
 		</property>
 		<property name="annotatedClasses">
 			<list>
-				<value>com.saswat.spring.springorm.product.entity</value>
+				<value>com.saswat.spring.springorm.product.entity.Product</value>
 			</list>
 		</property>
 	</bean>
@@ -50,6 +52,12 @@
 		class="org.springframework.orm.hibernate5.HibernateTransactionManager"
 		name="transactionManager" p:sessionFactory-ref="sessionFactory">
 	</bean>
+
+<!-- 	<bean
+		class="com.saswat.spring.springorm.product.dao.impl.ProductDaoImpl"
+		name="productDao">
+		<property name="hibernateTemplate" ref="hibernateTemplate"></property>
+	</bean> -->
 
 
 

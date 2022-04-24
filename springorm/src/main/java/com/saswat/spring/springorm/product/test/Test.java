@@ -11,7 +11,7 @@ public class Test {
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
 				" com/saswat/spring/springorm/product/test/config.xml");
-		ProductDao productDao = (ProductDao) context.getBean("productDao");
+		ProductDao productDao = (ProductDao) context.getBean("productDaoImpl");
 		
 		Product product = new Product();
 		product.setId(1);
@@ -20,10 +20,6 @@ public class Test {
 		product.setPrice(100000);
 		
 		productDao.insert(product);
-		
-		
-		
-		
-		
+			
 	}
 }
