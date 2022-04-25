@@ -5,7 +5,6 @@
     <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
     <fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Required"/>
     <fullyQualifiedTypeName name="com.saswat.spring.springcore.innerbean.Address"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
@@ -13,7 +12,6 @@
     <fullyQualifiedTypeName name="com.saswat.spring.springcoreadvanced.interface_injection.OrderDAO"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
     <fullyQualifiedTypeName name="com.saswat.spring.springjdbc.employee.dao.EmployeeDao"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
     <fullyQualifiedTypeName name="com.saswat.spring.springjdbc.employee.dao.rowmapper.EmployeeRowMapper"/>
     <fullyQualifiedTypeName name="com.saswat.spring.springjdbc.employee.dto.Employee"/>
@@ -28,8 +26,21 @@
     <fullyQualifiedTypeName name="javax.naming.Context"/>
     <fullyQualifiedTypeName name="com.saswat.spring.springorm.product.entity.Product"/>
     <fullyQualifiedTypeName name="com.saswat.spring.springorm.product.dao.ProductDao"/>
-    <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
-    <fullyQualifiedTypeName name="org.springframework.orm.hibernate5.HibernateTemplate"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.orm.hibernate5.HibernateTemplate"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.saswat.spring.springmvc.dto.Employee"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Required"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+    <fullyQualifiedTypeName name="org.springframework.ui.ModelMap"/>
+    <fullyQualifiedTypeName name="com.saswat.spring.springmvc.dto.User"/>
 </qualifiedTypeNameHistroy>

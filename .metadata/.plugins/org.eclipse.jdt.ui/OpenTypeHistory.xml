@@ -4,5 +4,5 @@
     <typeInfo handle="=springcoreadvanced/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.saswat.spring.springcoreadvanced.interface_injection{OrderDAO.java[OrderDAO" modifiers="513" timestamp="1650113989570"/>
     <typeInfo handle="=springjdbc/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.saswat.spring.springjdbc.employee.dao{EmployeeDao.java[EmployeeDao" modifiers="513" timestamp="1650709169047"/>
     <typeInfo handle="=springorm/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.saswat.spring.springorm.product.dao{ProductDao.java[ProductDao" modifiers="513" timestamp="1650774470920"/>
-    <typeInfo handle="=springorm/C:\/Users\/DELL\/.m2\/repository\/org\/springframework\/spring-orm\/4.3.6.RELEASE\/spring-orm-4.3.6.RELEASE.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework=/=/maven.artifactId=/spring-orm=/=/maven.version=/4.3.6.RELEASE=/=/maven.scope=/compile=/&lt;org.springframework.orm.hibernate4(LocalSessionFactoryBean.class[LocalSessionFactoryBean" modifiers="33" timestamp="1650788755950"/>
+    <typeInfo handle="=springormnew/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.saswat.spring.springormnew.product.dao{ProductDao.java[ProductDao" modifiers="513" timestamp="1650810913164"/>
 </typeInfoHistroy>
