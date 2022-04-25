@@ -42,6 +42,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.saswat.spring.springmvcorm"/>
 			<item value="com.saswat.spring.springmvctest"/>
 			<item value="com.saswat.spring.springmvc"/>
 			<item value="com.saswat.spring.testspringorm"/>
@@ -53,6 +54,7 @@
 			<item value="com.saswat.spring"/>
 		</list>
 		<list key="artifactId">
+			<item value="springmvcorm"/>
 			<item value="springmvctest"/>
 			<item value="springmvc"/>
 			<item value="testspringorm"/>

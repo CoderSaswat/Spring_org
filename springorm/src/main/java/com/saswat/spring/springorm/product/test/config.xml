@@ -53,12 +53,4 @@
 		name="transactionManager" p:sessionFactory-ref="sessionFactory">
 	</bean>
 
-<!-- 	<bean
-		class="com.saswat.spring.springorm.product.dao.impl.ProductDaoImpl"
-		name="productDao">
-		<property name="hibernateTemplate" ref="hibernateTemplate"></property>
-	</bean> -->
-
-
-
 </beans>
