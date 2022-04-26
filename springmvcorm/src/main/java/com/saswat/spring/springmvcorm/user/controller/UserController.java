@@ -8,6 +8,8 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.saswat.spring.springmvcorm.user.entity.User;
 import com.saswat.spring.springmvcorm.user.services.UserService;
@@ -34,6 +36,17 @@ public class UserController {
 		List<User> users = service.getUsers();
 		model.addAttribute("users", users);
 		return "displayUsers";
+	}
+
+//	this is for ajax call
+	@RequestMapping("validateId")
+	public @ResponseBody String validateId(@RequestParam("id") int id) {
+		User user = service.getUser(id);
+		String msg = "";
+		if (user != null) {
+			msg = id + " : already exists";
+		}
+		return msg;
 	}
 
 	public UserService getService() {
