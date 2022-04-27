@@ -42,12 +42,14 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.saswat.spring.springjavaconfig"/>
 			<item value="com.saswat.spring.springaop"/>
 		</list>
 		<list key="groupId">
 			<item value="com.saswat.spring"/>
 		</list>
 		<list key="artifactId">
+			<item value="springjavaconfig"/>
 			<item value="springaop"/>
 		</list>
 		<list key="projectNameTemplate">

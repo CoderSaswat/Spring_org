@@ -1,5 +1,6 @@
 package com.saswat.spring.springmvcorm.user.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -8,11 +9,16 @@ import javax.persistence.Table;
 @Table(name = "user")
 public class User implements Comparable<User>{
 	@Id
+	@Column(name = "id")
 	private Integer id;
+	@Column(name = "name")
 	private String name;
+	@Column(name = "email")
 	private String email;
 
-	public int getId() {
+	
+
+	public Integer getId() {
 		return id;
 	}
 

@@ -14,16 +14,16 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <!-- ajax call using jquery to check that pert id is already present in the db -->
-<script type="text/javascript">
+<script>
 	$(document).ready(function() {
-		$("id").change(function() {
+		$("#id").change(function() {
 			$.ajax({
-				url : "validateId",
+				url : 'validateId',
 				data : {
 					id : $("#id").val()
 				},
 				success : function(responseText) {
-					$("errMsg").text(responseText);
+					$("#errMsg").text(responseText);
 
 					if (responseText != "") {
 						$("#id").focus();
@@ -40,7 +40,8 @@
 			<div class="mb-3">
 				<label for="exampleInputEmail1" class="form-label">Id</label> <input
 					type="text" class="form-control" id="id"
-					aria-describedby="emailHelp" name="id"> <span id="errMsg"></span>
+					aria-describedby="emailHelp" name="userid"> <span
+					id="errMsg"></span>
 			</div>
 			<div class="mb-3">
 				<label for="exampleInputPassword1" class="form-label">name</label> <input
@@ -54,12 +55,8 @@
 			</div>
 			<button type="submit" class="btn btn-primary">Submit</button>
 		</form>
-
-		<br>
-		<%
-		String result = (String) request.getAttribute("result");
-		%>
-		<strong> <%=result%></strong>
 	</div>
+	<br>
+	<div class="container">${result}</div>
 </body>
 </html>
