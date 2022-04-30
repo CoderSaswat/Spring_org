@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 
+import com.saswat.spring.boot.springdatajpa.data.entities.Product;
 import com.saswat.spring.boot.springdatajpa.data.repos.ProductRepository;
 
 @SpringBootTest
@@ -17,12 +18,12 @@ class SpringdatajpaApplicationTests {
 		ProductRepository repository = context.getBean(ProductRepository.class);
 
 //		insert a record
-//		Product product = new Product();
-//		product.setId(2l);
-//		product.setName("mac book pro");
-//		product.setPrice(80d);
-//		product.setDescription("i will buy a mac book pro in 2023");
-//		repository.save(product);
+		Product product = new Product();
+		product.setId(3l);
+		product.setName("gaming laptop");
+		product.setPrice(200d);
+		product.setDescription("i am a pro gamer");
+		repository.save(product);
 
 //		fetch one record by id
 //		Optional<Product> optional = repository.findById(1l);
@@ -43,6 +44,11 @@ class SpringdatajpaApplicationTests {
 
 //		delete by id
 //		repository.deleteById(2L);
+		
+//		custom finder method
+//		System.out.println(repository.findByName("mac book pro"));
+		
+//		System.out.println(repository.findByNameAndPrice("iphone", 60d));
 
 	}
 

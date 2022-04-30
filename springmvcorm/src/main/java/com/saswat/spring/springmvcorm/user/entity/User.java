@@ -7,7 +7,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "user")
-public class User implements Comparable<User>{
+public class User implements Comparable<User> {
 	@Id
 	@Column(name = "id")
 	private Integer id;
@@ -15,8 +15,6 @@ public class User implements Comparable<User>{
 	private String name;
 	@Column(name = "email")
 	private String email;
-
-	
 
 	public Integer getId() {
 		return id;
@@ -46,7 +44,7 @@ public class User implements Comparable<User>{
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", email=" + email + "]";
 	}
-	
+
 //	for sorting by id attribute of the user object
 	@Override
 	public int compareTo(User user) {

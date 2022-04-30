@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +8,6 @@
 </head>
 <body>
 	<h1>this is object type data sending from controller to ul</h1>
-	<%= request.getAttribute("employee") %>
+	<%=request.getAttribute("employee")%>
 </body>
 </html>

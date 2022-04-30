@@ -10,14 +10,14 @@
 </head>
 <body>
 	<h1>this is to send a list from controller to ui</h1>
-<%
-	ArrayList<Employee> employeeList =(ArrayList<Employee>) request.getAttribute("employeeList");
-	
-	for(Employee emp : employeeList){
+	<%
+	ArrayList<Employee> employeeList = (ArrayList<Employee>) request.getAttribute("employeeList");
+
+	for (Employee emp : employeeList) {
 		out.println(emp.getId());
 		out.println(emp.getName());
 		out.println(emp.getSalary());
 	}
-%>
+	%>
 </body>
 </html>

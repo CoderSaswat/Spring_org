@@ -14,12 +14,11 @@ public class WebServletConfiguration implements WebApplicationInitializer {
 	public void onStartup(ServletContext servletContext) throws ServletException {
 		AnnotationConfigWebApplicationContext webContext = new AnnotationConfigWebApplicationContext();
 		webContext.register(SpringConfig.class);
-		
-		ServletRegistration.Dynamic servlet = servletContext.addServlet("dispatcher", new DispatcherServlet(webContext));
+
+		ServletRegistration.Dynamic servlet = servletContext.addServlet("dispatcher",
+				new DispatcherServlet(webContext));
 		servlet.setLoadOnStartup(1);
 		servlet.addMapping("/");
 	}
-
-	
 
 }

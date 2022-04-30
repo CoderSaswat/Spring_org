@@ -34,8 +34,8 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public List<User> getUsers() {
 		List<User> users = userDao.findUsers();
-		 Collections.sort(users);
-		 return users;
+		Collections.sort(users);
+		return users;
 	}
 
 	@Override

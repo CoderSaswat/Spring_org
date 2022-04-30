@@ -6,6 +6,8 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\Spring_org\springdatajpa"/>
+			<item value="D:\Spring_org\springboot"/>
 			<item value="D:\Spring_org"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -42,6 +44,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.saswat.spring.springmvcjavaconfig"/>
 			<item value="com.saswat.spring.springjavaconfig"/>
 			<item value="com.saswat.spring.springaop"/>
 		</list>
@@ -49,6 +52,7 @@
 			<item value="com.saswat.spring"/>
 		</list>
 		<list key="artifactId">
+			<item value="springmvcjavaconfig"/>
 			<item value="springjavaconfig"/>
 			<item value="springaop"/>
 		</list>

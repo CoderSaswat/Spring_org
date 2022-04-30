@@ -4,13 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Employee {
-	@Autowired		//field level
+	@Autowired // field level
 	private Address address;
-	
+
 //	@Qualifier("myScores"); //tries to find a bean named as myScores
 //	private Score score;
-	
-		
+
 //	@Autowired		//constructor level
 //	public Employee(Address address) {
 //		super();
@@ -20,7 +19,7 @@ public class Employee {
 	public Address getAddress() {
 		return address;
 	}
-	
+
 //	@Autowired		//getter setter lavel
 //	public void setAddress(Address address) {
 //		this.address = address;

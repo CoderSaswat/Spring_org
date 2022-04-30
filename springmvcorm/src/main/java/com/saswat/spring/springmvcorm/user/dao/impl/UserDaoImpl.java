@@ -39,5 +39,4 @@ public class UserDaoImpl implements UserDao {
 		return hibernateTemplate.get(User.class, id);
 	}
 
-
 }

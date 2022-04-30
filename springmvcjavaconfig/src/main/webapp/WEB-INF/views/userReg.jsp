@@ -21,7 +21,8 @@
 			</div>
 			<div class="mb-3">
 				<label for="exampleInputPassword1" class="form-label">name</label> <input
-					type="text" class="form-control" id="exampleInputPassword1" name="name">
+					type="text" class="form-control" id="exampleInputPassword1"
+					name="name">
 			</div>
 			<div class="mb-3">
 				<label for="exampleInputPassword1" class="form-label">email</label>

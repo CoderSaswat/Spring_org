@@ -21,7 +21,7 @@
 
 	<!-- 2nd method - jsp expression language -->
 
-<%--
+	<%--
 	id : <b>${id}</b>
 	name : <b>${name}</b>
 	salary : <b>${salary}</b> 

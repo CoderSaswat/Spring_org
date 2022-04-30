@@ -16,13 +16,14 @@ public class UserController {
 		modelAndView.setViewName("userReg");
 		return modelAndView;
 	}
-	@RequestMapping(value="registerUser",method = RequestMethod.POST)
+
+	@RequestMapping(value = "registerUser", method = RequestMethod.POST)
 	public ModelAndView registerUser(@ModelAttribute("user") User user) {
 //		System.out.println(user);
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.addObject("user", user);
 		modelAndView.setViewName("successReg");
 		return modelAndView;
-		
+
 	}
 }
