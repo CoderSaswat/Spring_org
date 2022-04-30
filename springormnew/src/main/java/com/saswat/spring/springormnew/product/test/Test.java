@@ -16,14 +16,14 @@ public class Test {
 
 		Product product = new Product();
 //		insert
-//		product.setId(1);
-//		product.setName("iPhone");
-//		product.setName("this is best phone");
-//		product.setPrice(100000);
+//		product.setId(5);
+//		product.setName("earphone");
+//		product.setDesc("this is a boat earphone");
+//		product.setPrice(120);
 //		productDao.insert(product);
 
 //		update
-//		product.setPrice(80000);
+//		product.setPrice(80);
 //		productDao.update(product);
 
 //		delete
@@ -31,12 +31,15 @@ public class Test {
 //		productDao.delete(product);
 
 //		fetch single row
-//		Product singleProduct = productDao.findOne(3);
+//		Product singleProduct = productDao.findOne(1);
 //		System.out.println(singleProduct);
 
 //		fetch all rows
-//		List<Product> allProducts = productDao.findAll();
+		List<Product> allProducts = productDao.findAll();
 //		System.out.println(allProducts);
+		for(Product newProduct : allProducts) {
+			System.out.println(newProduct.getId() + " "+ newProduct.getName()+" "+newProduct.getDesc()+" "+newProduct.getPrice());
+		}
 
 	}
 }

@@ -16,34 +16,34 @@ public class ProductDaoImpl implements ProductDao {
 	@Autowired
 	HibernateTemplate hibernateTemplate;
 
-//	@Override
-//	@Transactional
-//	public int insert(Product product) {
-//		Integer result = (Integer) hibernateTemplate.save(product);
-//		return result;
-//	}
+	@Override
+	@Transactional
+	public int insert(Product product) {
+		Integer result = (Integer) hibernateTemplate.save(product);
+		return result;
+	}
 
-//	@Override
-//	@Transactional
-//	public void update(Product product) {
-//		hibernateTemplate.update(product);		
-//	}
+	@Override
+	@Transactional
+	public void update(Product product) {
+		hibernateTemplate.update(product);		
+	}
 
-//	@Override
-//	@Transactional
-//	public void delete(Product product) {
-//		hibernateTemplate.delete(product);
-//	}
+	@Override
+	@Transactional
+	public void delete(Product product) {
+		hibernateTemplate.delete(product);
+	}
 
-//	@Override
-//	public Product findOne(int id) {
-//		Product product = hibernateTemplate.get(Product.class, id);
-//		return product;
-//	}
+	@Override
+	public Product findOne(int id) {
+		Product product = hibernateTemplate.get(Product.class, id);
+		return product;
+	}
 
-//	@Override
-//	public List<Product> findAll() {
-//		List<Product> products = hibernateTemplate.loadAll(Product.class);
-//		return products;
-//	}
+	@Override
+	public List<Product> findAll() {
+		List<Product> products = hibernateTemplate.loadAll(Product.class);
+		return products;
+	}
 }
